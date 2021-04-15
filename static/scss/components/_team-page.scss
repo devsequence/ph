@@ -1,0 +1,52 @@
+.team-block{
+  &:first-of-type{
+    padding: 202px 0 90px;
+  }
+  .team-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -30px;
+  }
+  .team-item{
+    width: 100%;
+    max-width: 288px;
+    margin: 0 30px 60px;
+    &__media{
+      margin-bottom: 20px;
+    }
+    &__title{
+      font-size: 20px;
+      line-height: 27px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    &__text{
+      font-size: 16px;
+      line-height: 22px;
+      min-height: 44px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+    &__social{
+      ul{
+        display: flex;
+      }
+      li{
+        margin-right: 29px;
+      }
+      a{
+        width: 40px;
+        height: 40px;
+        box-sizing: border-box;
+        border-radius: 50%;
+        border: 1px solid $primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .icon{
+        fill: $primary;
+      }
+    }
+  }
+}

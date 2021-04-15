@@ -1,0 +1,160 @@
+.footer{
+  position: relative;
+  background: $default;
+  color: $white;
+  padding: 97px 0;
+  overflow: hidden;
+  .footer-top{
+    display: flex;
+    margin-bottom: 84px;
+  }
+  .bg{
+    position: absolute;
+    right: -53px;
+    z-index: 1;
+    bottom: 125px;
+  }
+  .container{
+    position: relative;
+    z-index: 2;
+  }
+}
+.footer-contact{
+  max-width: 200px;
+  margin-right: 145px;
+  &__title{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    color: $white;
+    margin-bottom: 25px;
+  }
+  &__contact{
+    margin-bottom: 30px;
+    a{
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      color: $white;
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+  &__social{
+    ul{
+      display: flex;
+    }
+    li{
+      margin-right: 20px;
+    }
+    a{
+      width: 40px;
+      height: 40px;
+      box-sizing: border-box;
+      border-radius: 50%;
+      background: $default-100;
+      border: 1px solid $default-100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover{
+        background: transparent;
+      }
+    }
+    .icon{
+      fill: $white;
+    }
+  }
+}
+.footer-nav{
+  max-width: 200px;
+  margin-right: 166px;
+  li{
+    margin-bottom: 15px;
+  }
+  a{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    color: $white;
+    &:hover{
+      color: rgba($white, .5);
+    }
+  }
+}
+.footer-info{
+  ul{
+    margin-bottom: 28px;
+  }
+  li{
+    margin-bottom: 15px;
+    span{
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 29px;
+      color: $white;
+      &:first-of-type{
+        color: #7C8287;
+        margin-right: 18px;
+      }
+    }
+  }
+  .btn-line{
+    padding: 13px 20px;
+  }
+}
+.footer-bottom{
+  display: flex;
+  justify-content: space-between;
+}
+.footer-payment{
+  ul{
+    display: flex;
+    align-items: center;
+  }
+  li{
+    height: 100%;
+    &:nth-of-type(1){
+      margin-right: 6px;
+      .icon, a{
+        width: 60px;
+        height: 36px;
+      }
+    }
+    &:nth-of-type(2){
+      margin-right: 13px;
+      .icon, a{
+        width: 65px;
+        height: 20px;
+      }
+    }
+    &:nth-of-type(3){
+      .icon, a{
+        width: 125px;
+        height: 25px;
+      }
+    }
+  }
+  .icon{
+    fill: #7C8287;
+  }
+  img{
+    filter: grayscale(100%);
+  }
+  a{
+    &:hover{
+      .icon{
+        fill: $white;
+      }
+      img{
+        filter: none;
+      }
+    }
+  }
+}
+.footer-company{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 40px;
+  color: $default-100;
+}

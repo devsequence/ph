@@ -1,0 +1,36 @@
+@font-face {
+  //font-family: 'Century Gothic';
+  //src: url('../fonts/CenturyGothic/CenturyGothic-Bold.eot');
+  //src:
+  //url('../fonts/CenturyGothic/CenturyGothic-Bold.eot?#iefix') format('embedded-opentype'),
+  //url('../fonts/CenturyGothic/CenturyGothic-Bold.woff') format('woff'),
+  //url('../fonts/CenturyGothic/CenturyGothic-Bold.ttf') format('truetype');
+  //font-weight: bold;
+  //font-style: normal;
+  font-family: 'NotoSans';
+  src: url('../fonts/NotoSans/NotoSans-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  //font-family: 'Century Gothic';
+  //src: url('../fonts/CenturyGothic/CenturyGothic-Bold.eot');
+  //src:
+  //url('../fonts/CenturyGothic/CenturyGothic-Bold.eot?#iefix') format('embedded-opentype'),
+  //url('../fonts/CenturyGothic/CenturyGothic-Bold.woff') format('woff'),
+  //url('../fonts/CenturyGothic/CenturyGothic-Bold.ttf') format('truetype');
+  //font-weight: bold;
+  //font-style: normal;
+  font-family: 'NotoSans';
+  src: url('../fonts/NotoSans/NotoSans-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+$NotoSans: 'NotoSans';
+
+html,
+body {
+  font-family: $NotoSans;
+  font-weight: 400;
+  font-size: 14px;
+}

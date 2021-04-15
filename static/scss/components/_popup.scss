@@ -1,0 +1,131 @@
+.popup{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -99;
+  transition: all ease 300ms;
+  &.active{
+    left: 0;
+    z-index: 11;
+  }
+}
+.popup-payment{
+  .popup-wrap{
+    width: 100%;
+    max-width: 1302px;
+    padding: 57px 45px;
+  }
+}
+.popup-wrap{
+  width: 100%;
+  background: $white;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+.popup-close{
+  position: absolute;
+  right: -15px;
+  top: -34px;
+  cursor: pointer;
+  .icon{
+    fill: $white;
+  }
+}
+
+.popup-overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba($black, .8);
+}
+.payment-form{}
+.payment-sum{
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  .radio-label{
+    display: inline-block;
+    width: 137px;
+    margin-right: 20px;
+  }
+  .radio-text{
+    display: inline-flex;
+    width: 100%;
+    max-width: 137px;
+    height: 67px;
+    border-radius: 10px;
+    background: $light-100;
+    font-size: 20px;
+    line-height: 27px;
+    cursor: pointer;
+  }
+  .label{
+    display: inline-block;
+    width: auto;
+    max-width: 160px;
+    margin: 0;
+  }
+  .input{
+    background: $light-100;
+    width: 100%;
+    max-width: 160px;
+    height: 67px;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 27px;
+    color: $primary;
+  }
+  .btn-blue{
+    margin: 0 0 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 20px 51px;
+    height: 67px;
+    img{
+      height: 26px;
+      width: 25px;
+    }
+    &:hover{
+      color: $default;
+      img{
+        filter: invert(1);
+      }
+    }
+  }
+}
+.payment-service{
+  display: flex;
+  align-items: center;
+  &__list{
+    display: flex;
+    align-items: center;
+  }
+  &__title{
+    margin-right: 40px;
+  }
+  &__title,
+  .payment-conditions{
+    font-size: 18px;
+    line-height: 34px;
+  }
+  a{
+    color: $primary;
+  }
+  .payment-conditions{
+    margin: 0 0 0 auto;
+  }
+  .radio-label{
+    margin-right: 14px;
+  }
+}
+
