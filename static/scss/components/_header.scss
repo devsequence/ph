@@ -21,6 +21,7 @@
     }
   }
   &-social{
+    display: none;
     margin: 0 auto 0 0;
     ul{
       display: flex;
@@ -43,10 +44,8 @@
     }
   }
   &-nav{
+    display: none;
     margin-top: -5px;
-    ul{
-      display: flex;
-    }
     li{
       margin: 0 4px;
       &:last-of-type{
@@ -68,7 +67,7 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 10px 0 6px;
-    border-bottom: 1px solid #D9D9D9;
+    border-bottom: 1px solid $default;
   }
   &-bottom{
     display: none;
@@ -96,27 +95,11 @@
         fill: $white;
       }
     }
-    .header-top{
-      border-bottom: 1px solid $white;
-    }
-    .header-bottom{
-      display: flex;
-    }
-    .header-social{
-      a{
-        border: 1px solid $white;
-      }
+    .btn-nav{
       .icon{
         fill: $white;
-      }
-    }
-    .header-nav{
-      a{
-        font-size: 18px;
-        line-height: 24px;
-        color: $white;
-        &:hover{
-          color: rgba($white, .5);
+        &:last-of-type{
+          fill: $white;
         }
       }
     }
@@ -131,6 +114,15 @@
     .header-logo{
       .icon{
         fill: $primary;
+      }
+    }
+    .btn-nav{
+      top: 25px;
+      .icon{
+        fill: $default;
+        &:last-of-type{
+          fill: $white;
+        }
       }
     }
     .header-bottom{
@@ -157,6 +149,20 @@
   }
 
 }
+.btn-nav{
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  z-index: 11;
+  .icon{
+    width: 45px;
+    height: 30px;
+    fill: $default;
+    &:last-of-type{
+      fill: $white;
+    }
+  }
+}
 .header-overlay{
   position: fixed;
   top: 0;
@@ -180,5 +186,79 @@
     fill: $white;
     width: 16px;
     height: 16px;
+  }
+}
+.header{
+  &.active{
+    overflow: auto;
+    height: 100%;
+    .container{
+      width: 80%;
+      max-width: 315px;
+      margin: 0 auto 0 0;
+      background-color: $white;
+      z-index: 11;
+    }
+    .header-logo{
+      margin-bottom: 30px;
+      .icon{
+        fill: $primary;
+      }
+    }
+    .header-nav{
+      display: block;
+      li{
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .icon{
+        margin-right: 10px;
+        fill: $primary;
+        position: relative;
+        top: 4px;
+      }
+      .icon-sub{
+        margin-left: 10px;
+        fill: $default;
+        height: 8px;
+        top: 0;
+        transform: rotate(0);
+        &.active{
+          transform: rotate(180deg);
+        }
+      }
+      .has-sub{
+        ul{
+          display: none;
+          margin-top: 12px;
+          padding-left: 10px;
+        }
+        &.active{
+          ul{
+            display: block;
+          }
+        }
+      }
+    }
+    .header-social{
+      display: flex;
+      li{
+        .icon{
+          margin: 0 auto;
+          top: 0;
+        }
+      }
+    }
+    .btn-nav{
+      position: fixed;
+      right: 10px;
+    }
+    .header-overlay{
+      visibility: visible;
+      z-index: 10;
+      opacity: 1;
+    }
   }
 }

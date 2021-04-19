@@ -1,0 +1,225 @@
+.fond-wrapper{
+  padding: 0 0 0;
+  .fond-media{
+    img{
+      width: 100%;
+      border-radius: 10px;
+    }
+    margin-bottom: 30px;
+  }
+  .fond-text{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  .fond-certificate{
+    a{
+      margin-bottom: 10px;
+      max-width: 200px;
+    }
+    img{
+      width: 100%;
+    }
+  }
+}
+.fond-type{
+  .program-item{
+    padding: 75px 40px;
+    margin: 0 auto 30px !important;
+    box-shadow: none !important;
+  }
+}
+.reports-wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+.reports-item{
+  display: flex;
+  align-items: flex-start;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 280px;
+  margin: 0 auto 30px;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+  &__media{
+    display: none;
+  }
+  &__title{
+    font-size: 89px;
+    line-height: 121px;
+    font-weight: bold;
+    display: flex;
+    span{
+      &:first-of-type{
+        color: $primary;
+      }
+      &:last-of-type{
+        color: $secondary;
+      }
+    }
+  }
+  &__link{
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: $primary;
+    .icon{
+      margin-left: 10px;
+      width: 32px;
+      fill: $primary;
+    }
+  }
+}
+@media screen and (min-width: 576px) {
+  .fond-wrapper{
+    .fond-certificate{
+      display: flex;
+      a{
+        margin: 0 auto 30px;
+        max-width: 200px;
+      }
+    }
+  }
+  .fond-type{
+    display: flex;
+    flex-wrap: wrap;
+    .program-item{
+      padding: 40px;
+      margin: 0 auto 30px !important;
+      max-width: 240px;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .reports-item{
+    max-width: 404px;
+    &__title{
+      margin-bottom: 30px;
+    }
+    &__media{
+      display: block;
+      margin-right: 30px;
+      .icon{
+        width: 115px;
+        height: 119px;
+        transform: scale(-1, 1);
+        fill: #D9D9D9;
+      }
+    }
+  }
+  .fond-wrapper{
+    .fond-certificate{
+      margin-bottom: 30px;
+      a{
+        max-width: 404px;
+      }
+    }
+  }
+  .fond-type{
+    .program-item{
+      padding: 50px;
+      max-width: 270px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .fond-wrapper{
+    .section-title{
+      margin-bottom: 60px;
+    }
+    .fond-text{
+      font-size: 18px;
+      line-height: 24px;
+    }
+    .fond-media{
+      margin-bottom: 60px
+    }
+    .fond-text{
+      margin-bottom: 60px;
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .fond-wrapper{
+    .fond-text{
+      margin-bottom: 150px;
+    }
+    .payment-requisites{
+      &:after{
+        margin-top: -96px;
+      }
+      ul{
+        li{
+          &:last-of-type{
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .payment-requisites__title{
+      margin-bottom: 30px;
+    }
+    .fond-certificate{
+      margin-bottom: 120px;
+    }
+  }
+  .payment-wrapper{
+    position: relative;
+    &:after{
+      position: absolute;
+      content: '';
+      right: 20px;
+      bottom: 50px;
+      width: 160px;
+      height: 180px;
+      background: url("../images/svg/payment-requisites.svg") no-repeat;
+    }
+  }
+  .fond-type{
+    padding: 170px 0 100px;
+    .program-item {
+      padding: 50px 20px !important;
+      width: 290px;
+      max-width: 290px;
+    }
+    .program-item__text {
+      font-size: 20px;
+      text-align: left;
+      margin-bottom: 34px;
+    }
+    .program-item__link {
+      a{
+        font-size: 20px;
+        .icon{
+          width: 34px;
+        }
+      }
+    }
+    .program-item__media {
+      margin-bottom: 38px;
+      img{
+        width: 150px;
+        height: 150px;
+      }
+    }
+  }
+  .reports-wrapper{
+    margin-bottom: 47px;
+    .section-title{
+      margin-bottom: 60px;
+    }
+    .reports-wrap{
+      margin: 0 -30px;
+    }
+    .reports-item{
+      width: 404px;
+      padding: 30px;
+      margin: 0 auto 65px;
+    }
+    .reports-item__link{
+      justify-content: flex-end;
+    }
+  }
+}
