@@ -93,17 +93,18 @@
 
     display: flex;
     align-items: center;
-    padding: 20px 51px;
+    padding: 20px 41px;
     height: 55px;
     img{
       height: 26px;
       width: 25px;
+      margin-right: 20px;
     }
     &:hover{
-      color: $default;
-      img{
-        filter: invert(1);
-      }
+      color: $white;
+      //img{
+      //  filter: invert(1);
+      //}
     }
   }
 }

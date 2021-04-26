@@ -32,7 +32,12 @@
 			<div class="container">
 				<div class="section-title">Фонд Громади «Подільська громада»</div>
 				<div class="fond-media">
-					<img src="../static/images/general/fond-img.png" alt="">
+					<div class="fond-media-btn">
+						<img src="../static/images/svg/btn-play.svg" alt="">
+					</div>
+					<video class="video-item" controls="controls" poster="../static/images/general/fond-img.png">
+						<source src="../static/images/video/video.mp4" type="video/mp4">
+					</video>
 				</div>
 				<div class="fond-text">
 					В кожному з нас живе філантроп. Великий чи малий,але він є. Саме тому ми прагнемо змінювати світ навколо себе на краще.
@@ -125,6 +130,7 @@
 							</li>
 							<li>
 								<span>в АБ «Укргазбанк»</span>
+								<span></span>
 							</li>
 						</ul>
 					</div>
@@ -312,5 +318,7 @@
     @@include('./includes/symbol/icons.html')
 </div>
 @@include('./includes/_scripts-fancy.html')
+<script  type="text/javascript" src="../static/js/common.js"></script>
+
 </body>
 </html>

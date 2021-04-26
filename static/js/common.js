@@ -45,7 +45,7 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
             slidesPerView: 3,
         },
         480: {
-            slidesPerView: 2,
+            slidesPerView: 3,
         }
     },
 });
@@ -98,3 +98,6 @@ $('.payment-service input').on('click', function (e) {
     $('.payment-service input').addClass('input__service');
 });
 
+$('.video-item').on('click', function() {
+    $('.fond-media-btn').toggleClass('hidden');
+});

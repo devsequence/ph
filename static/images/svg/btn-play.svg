@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="166" height="166" viewBox="0 0 166 166">
+  <g id="btn-play" transform="translate(-877 -679)">
+    <g id="play-button-arrowhead" transform="translate(923 721)">
+      <path id="Контур_289" data-name="Контур 289" d="M21.482,1.806C14.1-2.431,8.107,1.04,8.107,9.553V72.371c0,8.521,5.988,11.988,13.375,7.755L76.388,48.637c7.389-4.238,7.389-11.105,0-15.343Z" transform="translate(-2.107 0)" fill="#fff"/>
+    </g>
+    <g id="Эллипс_49" data-name="Эллипс 49" transform="translate(877 679)" fill="none" stroke="#fff" stroke-width="10">
+      <circle cx="83" cy="83" r="83" stroke="none"/>
+      <circle cx="83" cy="83" r="78" fill="none"/>
+    </g>
+  </g>
+</svg>

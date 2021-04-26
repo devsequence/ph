@@ -195,8 +195,42 @@
       display: none !important;
     }
     .has-sub{
+      position: relative;
       ul{
         display: none;
+        position: absolute;
+        flex-direction: column;
+        min-width: 430px;
+        right: 0;
+        border-radius: 10px;
+        top: 100%;
+        background: #fff;
+        padding: 30px;
+        box-shadow: 0px 2px 20px 0px rgba(0,0,0, .1);
+        li{
+          margin-bottom: 10px;
+        }
+        a{
+          position: relative;
+          padding-left: 40px;
+          .icon{
+            display: inline-block !important;
+            margin-right: 20px;
+            fill: $light;
+            position: absolute;
+            left: 0;
+          }
+          &:hover{
+            .icon{
+              fill: $secondary;
+            }
+          }
+        }
+      }
+      &:hover{
+        ul{
+          display: flex;
+        }
       }
     }
     .header-social{
@@ -297,17 +331,20 @@
         }
         &:hover{
           background: $primary-hover;
+          img{
+            display: none;
+          }
+          span{
+            display: block !important;
+            font-size: 12px;
+            line-height: 17px;
+            font-weight: 400;
+            text-transform: uppercase;
+            padding: 5px;
+            text-align: center;
+            color: $white;
+          }
         }
-      }
-      .btn-text{
-        font-size: 12px;
-        line-height: 17px;
-        font-weight: 400;
-        text-transform: uppercase;
-        padding: 5px;
-        text-align: center;
-        color: $white;
-        margin-left: 24px;
       }
     }
   }
@@ -504,7 +541,7 @@
       padding: 30px;
       &:hover{
         z-index: 5;
-        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 2px 20px 0px rgba(0,0,0, .1);
       }
       &:nth-of-type(1), &.item-big{
         max-width: 825px;
@@ -540,7 +577,7 @@
       min-height: 535px;
       &:hover{
         z-index: 5;
-        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 2px 20px 0px rgba(0,0,0, .1);
       }
       .news-slide__media{
         margin-bottom: 32px;
@@ -610,7 +647,7 @@
     }
   }
   .partner-wrapper{
-    padding: 81px 0 42px;
+    padding: 81px 0 150px;
     .section-title{
       margin-bottom: 60px;
     }
@@ -619,7 +656,7 @@
     width: calc(25% - 30px);
     min-height: 175px;
     &:hover{
-      box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 2px 20px 0px rgba(0,0,0, .1);
     }
     a{
       height: 100%;

@@ -64,6 +64,7 @@ $(window).on('load', function() {
         var swiper = new Swiper( '.about-slider', {
             effect: "coverflow",
             grabCursor: true,
+            loop: true,
             centeredSlides: true,
             slidesPerView: "auto",
             coverflowEffect: {
@@ -80,6 +81,7 @@ $(window).on('load', function() {
         } );
 
         var teamTnfo = new Swiper('.team-info', {
+            loop: true,
             thumbs: {
                 swiper: teamSwiper
             },
@@ -89,6 +91,7 @@ $(window).on('load', function() {
             watchSlidesProgress: true,
             centerInsufficientSlides: true,
             slideToClickedSlide: true,
+            loop: true,
             effect: "coverflow",
             centeredSlides: true,
             slidesPerView: "auto",

@@ -66,8 +66,8 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    padding: 10px 0 6px;
-    border-bottom: 1px solid $default;
+    padding: 0 0 6px;
+    border-bottom: 1px solid #D9D9D9;
   }
   &-bottom{
     display: none;
@@ -103,11 +103,14 @@
         }
       }
     }
+    .header-top{
+      border-bottom: 0;
+    }
   }
   &.scroll-nav{
     position: fixed;
     background: #fff;
-    box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 20px 0px rgba(0,0,0, .1);
     .header-top{
       border-bottom: 0;
     }
@@ -208,7 +211,7 @@
     .header-nav{
       display: block;
       li{
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         display: flex;
         align-items: center;
         flex-wrap: wrap;
@@ -234,7 +237,13 @@
           display: none;
           margin-top: 12px;
           padding-left: 10px;
+          a{
+            .icon{
+              display: none;
+            }
+          }
         }
+
         &.active{
           ul{
             display: block;
@@ -245,6 +254,7 @@
     .header-social{
       display: flex;
       li{
+        margin: 0 30px 0 0;
         .icon{
           margin: 0 auto;
           top: 0;
