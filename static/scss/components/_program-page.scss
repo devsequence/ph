@@ -209,11 +209,42 @@
 }
 @media screen and (min-width: 1200px) {
   .payment-form{
-    padding: 57px 45px;
+    padding: 57px 61px;
+    margin-bottom: 150px;
+  }
+  .payment-requisites__title{
+    margin-bottom: 30px;
   }
   .program-page{
-    padding: 0;
+    padding: 0 0 100px;
   }
+  .payment-wrapper{
+    padding-bottom: 130px;
+  }
+  .payment-service__title{
+    padding-left: 3px;
+    margin-right: 44px;
+  }
+  .payment-service {
+    a{
+      margin-right: -1px;
+      margin-left: 5px;
+    }
+  }
+  .payment-sum {
+    .btn-blue{
+      font-size: 20px;
+      line-height: 31px;
+      padding: 20px 24px;
+      img {
+        height: 36px;
+        width: 36px;
+        margin-right: 7px;
+        margin-top: 5px;
+      }
+    }
+  }
+
   .program-wrap{
     display: flex;
   }
@@ -280,6 +311,16 @@
     }
     .programs-item__media{
       margin-bottom: 36px;
+    }
+  }
+  .payment-sum{
+    .radio-label{
+      &:nth-of-type(4){
+        width: 152px;
+        .radio-text{
+          max-width: 152px;
+        }
+      }
     }
   }
 }

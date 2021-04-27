@@ -1,4 +1,7 @@
 .hero{
+  &-wrapper{
+    padding: 0;
+  }
   &-media{
     position: absolute;
     width: 100%;

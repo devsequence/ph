@@ -97,7 +97,15 @@ $('#payment-sum_5').on('click', function (e) {
 $('.payment-service input').on('click', function (e) {
     $('.payment-service input').addClass('input__service');
 });
+var video = document.getElementsByClassName('video-item');
 
-$('.video-item').on('click', function() {
+$('.video-item').on('click', function(e) {
     $('.fond-media-btn').toggleClass('hidden');
+    if ($(this).get(0).paused) {
+        $(this).get(0).play();
+    }
+    else {
+        $(this).get(0).pause();
+    }
+    e.preventDefault();
 });
