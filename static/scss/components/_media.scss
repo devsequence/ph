@@ -245,6 +245,22 @@
   .hero-nav{
     display: block;
   }
+  .header{
+    &.home-page{
+      .header-nav{
+        .has-sub{
+          ul{
+            a{
+              color: $default;
+              &:hover{
+                color: $default;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero{

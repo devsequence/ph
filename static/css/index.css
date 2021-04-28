@@ -2285,7 +2285,11 @@ input[type=number]::-webkit-outer-spin-button {
   .btn-nav {
     display: none; }
   .hero-nav {
-    display: block; } }
+    display: block; }
+  .header.home-page .header-nav .has-sub ul a {
+    color: #353D42; }
+    .header.home-page .header-nav .has-sub ul a:hover {
+      color: #353D42; } }
 
 @media screen and (min-width: 1200px) {
   .hero-wrapper {
