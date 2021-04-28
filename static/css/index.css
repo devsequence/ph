@@ -1266,10 +1266,9 @@ input[type=number]::-webkit-outer-spin-button {
   .team-slider img {
     border-radius: 10px;
     width: 100%;
-    margin: 0 auto;
     object-fit: cover;
-    max-width: 290px;
-    max-height: 300px; }
+    max-width: 260px;
+    max-height: 260px; }
 
 .partner-wrap {
   display: flex;
@@ -2338,7 +2337,7 @@ input[type=number]::-webkit-outer-spin-button {
   .section-title {
     margin-bottom: 29px; }
   .hero-nav {
-    position: absolute;
+    position: fixed;
     z-index: 2;
     right: 15px;
     bottom: 20px;

@@ -82,6 +82,7 @@ $(window).on('load', function() {
 
         var teamTnfo = new Swiper('.team-info', {
             loop: true,
+            slidesPerView: "auto",
             thumbs: {
                 swiper: teamSwiper
             },
@@ -97,8 +98,8 @@ $(window).on('load', function() {
             slidesPerView: "auto",
             coverflowEffect: {
                 rotate: 0,
-                stretch: 250,
-                depth: 280,
+                stretch: 240,
+                depth: 240,
                 modifier: 1,
                 slideShadows: false
             },
