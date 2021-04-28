@@ -331,7 +331,7 @@
   .hero{
     &-nav{
       position: fixed;
-      z-index: 2;
+      z-index: 10;
       right: 15px;
       bottom: 20px;
       display: flex;
