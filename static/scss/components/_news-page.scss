@@ -6,7 +6,7 @@
  }
 }
 .news-item{
-  padding: 15px;
+  padding: 0;
   box-sizing: border-box;
   background: $white;
   border-radius: 10px;
@@ -39,5 +39,10 @@
     font-size: 16px;
     line-height: 22px;
     color: #C2C4C6;
+  }
+}
+@media screen and (min-width: 767px) {
+  .news-item{
+    padding: 15px;
   }
 }
